@@ -14,7 +14,7 @@ public class PemilihanPercobaan1_14 {
         System.out.print("Masukkan angka : ");
         int angka = input.nextInt();
 
-        String hasil = (angka % 2 == 0) ? "genap" : "ganjil";
+        String hasil = angka % 2 == 0 ? "genap" : "ganjil";
 
         System.out.printf("Angka %d adalah bilangan %s !\n", angka, hasil);
 

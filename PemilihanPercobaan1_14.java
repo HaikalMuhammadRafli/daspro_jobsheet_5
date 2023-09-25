@@ -14,11 +14,9 @@ public class PemilihanPercobaan1_14 {
         System.out.print("Masukkan angka : ");
         int angka = input.nextInt();
 
-        if (angka % 2 == 0) {
-            System.out.printf("Angka %d adalah bilangan genap!\n", angka);
-        } else {
-            System.out.printf("Angka %d adalah bilangan ganjil!\n", angka);
-        }
+        String hasil = (angka % 2 == 0) ? "genap" : "ganjil";
+
+        System.out.printf("Angka %d adalah bilangan %s !\n", angka, hasil);
 
         input.close();
     }
